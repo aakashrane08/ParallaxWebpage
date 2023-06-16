@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: aqua;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px; 
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    object-fit: cover;
+    height: 100%;
+    z-index: -1;
+}
+
+#h1{
+    position: absolute;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px black;
+    font-size: 8rem;
+    margin-left: 750px;
+}
+
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform: translateZ(-50px) scale(6);
+}
+
+.foreground{
+    position: absolute;
+    height: 100%;
+    margin-top: 200px;
+    margin-right: 2200px;
+    z-index: -1;
+    transform: translateZ(-20px) scale(3);
+}
+
+section{
+    background-color: rgb(73, 66, 66);
+    padding: 50px 0;
+}
+
+.bg{
+    position: relative;
+    width:100%;
+    background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.bg1{
+    background-image: url(/images/team1.jpg);
+}
+.bg2{
+    background-image: url(images/team2.jpg);
+}
+.bg3{
+    background-image: url(images/team3.webp);
+}
+
+.desc{
+    position: absolute;
+    color: black;
+    /* letter-spacing: 3px; */
+    font-size: 3rem;
+    margin-top: 400px;
+    margin-left: 70px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.secH{
+    padding-bottom: 0px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    font-size: 4rem;
+    color: white;
+}
+
+.text{
+    padding: 10px 10px;
+    margin: 30px 80px;
+    color: white;
+    font-size:x-large;
+}
